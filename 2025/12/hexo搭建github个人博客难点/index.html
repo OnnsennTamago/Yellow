@@ -14,21 +14,24 @@
   
 
   
-  <title>Archives: 2023 | Title</title>
+  <title>hexo搭建github个人博客难点 | Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/blog/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/blog/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Title">
-<meta property="og:url" content="https://onnsenntamago.github.io/blog/archives/2023/index.html">
+  <meta name="description" content="基础&#8194;&ensp;各种前置安装，版本匹配什么的，就不说明了，网上一大堆。 认证用户名和密码&ensp;&ensp;跳过，终端上传现在已经不支持用户名和密码连接了。 SSH认证 生成SSH  &ensp;&ensp;都会把秘钥生成在本地用户的隐藏文件夹 ~.ssh 中，文件 ~&#x2F;.ssh&#x2F;id_rsa.pub 存的就是。&ensp;&ensp;没有怎么办？用终端生">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建github个人博客难点">
+<meta property="og:url" content="https://onnsenntamago.github.io/blog/2025/12/hexo%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9A%BE%E7%82%B9/index.html">
 <meta property="og:site_name" content="Title">
-<meta property="og:description" content="description">
+<meta property="og:description" content="基础&#8194;&ensp;各种前置安装，版本匹配什么的，就不说明了，网上一大堆。 认证用户名和密码&ensp;&ensp;跳过，终端上传现在已经不支持用户名和密码连接了。 SSH认证 生成SSH  &ensp;&ensp;都会把秘钥生成在本地用户的隐藏文件夹 ~.ssh 中，文件 ~&#x2F;.ssh&#x2F;id_rsa.pub 存的就是。&ensp;&ensp;没有怎么办？用终端生">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-12-15T17:43:18.000Z">
+<meta property="article:modified_time" content="2025-12-15T19:18:37.269Z">
 <meta property="article:author" content="Yellow">
-<meta property="article:tag" content="keywords">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/blog/atom.xml" title="Title" type="application/atom+xml">
@@ -211,44 +214,120 @@
     <div id="content-body">
        
 
-<div class="archive-main-card">
-    <div class="archive-top">
-      <div class="main-title-bar">
-        <div class="main-title-dot"></div>
-        <h1 class="article-title">Archives</h1>
-      </div>    
+<article id="post-hexo搭建github个人博客难点" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        hexo搭建github个人博客难点
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2025-12-15T17:43:18.000Z" itemprop="datePublished">2025-12-16</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            718 words 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <b>
+
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>&#8194;&ensp;各种前置安装，版本匹配什么的，就不说明了，网上一大堆。</p>
+<h2 id="认证"><a href="#认证" class="headerlink" title="认证"></a>认证</h2><h3 id="用户名和密码"><a href="#用户名和密码" class="headerlink" title="用户名和密码"></a>用户名和密码</h3><p>&ensp;&ensp;跳过，终端上传现在已经不支持用户名和密码连接了。</p>
+<h3 id="SSH认证"><a href="#SSH认证" class="headerlink" title="SSH认证"></a>SSH认证</h3><ul>
+<li><h4 id="生成SSH"><a href="#生成SSH" class="headerlink" title="生成SSH"></a>生成SSH</h4></li>
+</ul>
+<p>&ensp;&ensp;都会把秘钥生成在本地用户的隐藏文件夹 ~.ssh 中，文件 ~&#x2F;.ssh&#x2F;id_rsa.pub 存的就是。<br>&ensp;&ensp;没有怎么办？用终端生成一个</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;如果不支持 Ed25519 算法的旧系统，使用以下命令。至于什么算法和系统不需要懂，试一下能生成就行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="添加SSH"><a href="#添加SSH" class="headerlink" title="添加SSH"></a>添加SSH</h4></li>
+</ul>
+<p>&ensp;&ensp;生成后，添加代理，光生成放在那里没用。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ eval &quot;$(ssh-agent -s)&quot;</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;我用的是 macOS ，且版本高于 Sierra 10.12.2 ，所以直接手动打开 ~.ssh&#x2F;config ，然后把文件路径添加进去。<br>&ensp;&ensp;没有 config 就创建一个</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch ~/.ssh/config</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;然后粘贴下面内容，记得修改文件路径！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ Host github.com</span><br><span class="line">  AddKeysToAgent yes</span><br><span class="line">  UseKeychain yes</span><br><span class="line">  IdentityFile ~/.ssh/id_ed25519</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="测试SSH"><a href="#测试SSH" class="headerlink" title="测试SSH"></a>测试SSH</h4></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>&ensp;&ensp;成功返回如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Hi username! You&#x27;ve successfully authenticated, but GitHub does not provide shell access</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><h3 id="基础-1"><a href="#基础-1" class="headerlink" title="基础"></a>基础</h3><p>&ensp;&ensp;基础的设置网上一大堆，不赘述。</p>
+<h3 id="repo"><a href="#repo" class="headerlink" title="repo"></a>repo</h3><p>&ensp;&ensp;_config.yml 文件是上传前的基础设置。我失败的原因，就在最后的 deploy 参数里。网上很多说什么 token 添加之类的，无论是单独 token 赋值，还是放进 repo 的参数中间，我都失败了。<br>直接上结论</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:&lt;user_name&gt;/&lt;user_name&gt;.github.io</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;repo 的参数开头是 git@ ！！！我以前的 repo 开头是 https:&#x2F;&#x2F;<br>&emsp;&emsp;之前说过，这个 blog 在23年就建立了，但25年的我部署失败了，原因是就只这个。前缀 git 是 SSH 专属的方式，既然用 SSH认证，格式总得对，就这个3个破字母花了我一天的时间 !&amp;#@%#@@ 我是无意间点到 Code 下拉才发现的，就是打开仓库后，文件预览最上面的 <font style=background:#11ff00ff><span style="color: #ffffffff;">&lt;&ensp;&gt;Code</span> </font> 按钮。</p>
+<h2 id="图片部署"><a href="#图片部署" class="headerlink" title="图片部署"></a>图片部署</h2><h3 id="故事开端"><a href="#故事开端" class="headerlink" title="故事开端"></a>故事开端</h3><p>&ensp;&ensp;本地图片嵌入，上传后就失效，除非图片一起上传。但这样本地需要保留图片，且会越来越大。一旦删除图片，下次就不会部署了。因为部署流程是：仓库内容删除 → 上传，原理不是替换。这也是之前在博客园的经验，嵌入图片我都用的网图链接。</p>
+<h3 id="个人图片"><a href="#个人图片" class="headerlink" title="个人图片"></a>个人图片</h3><p>&ensp;&ensp;个人图片网上没有链接的，所以需要一个中转站，github里建个仓就可以实现，俗称图床。之后步骤流程单独写一篇。用图片展示效果更直接，个人也更习惯用图片说明。</p>
+<p>更多参考<a target="_blank" rel="noopener" href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">GitHub官网SSH生成</a><br><b></p>
+
+        
+      </div>
+
+         
     </div>
     
-    
-      
-      
-        
-        <div class="year-line">
-            <div class="year-num">2023</div>
-            <div class="dot-wrapper">
-                <div class="dot"></div>
-            </div>
-            <div class="article-count">1 article</div>
-        </div>
-      
-      <a class="archive-article-link" href="/blog/2023/09/hello-world/" title="Hello World">
-        <div class="date">09-12</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Hello World
-                
-            </div>
-        </div>
-        <div class="tags">
-            
-        </div>
-      </a>
-    
+     
   </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left  disabled "
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/blog/2025/12/my-first-post/"
+      title="my_first_post"
+     >
+
+    <p class="title-text">
+      
+        my_first_post
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+ 
     </div>
     <div id="footer-wrapper">
       <footer id="footer">
